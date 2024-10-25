@@ -1,0 +1,27 @@
+
+.canvas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.canvas h1{
+    font-family: sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.canvas img{
+    position: relative;
+    width: 860px;
+}
+
+.canvasImg{
+    position: absolute;
+}
+
+.canvasImg img{
+    width: 300px;
+    height: 300px;
+}
