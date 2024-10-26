@@ -3,6 +3,8 @@ import bg from "../images/bg4.jpg";
 import dragImg from "../images/dragImg.jpeg";
 import "../styles/canva.css";
 import { useState } from "react";
+import AddText from "./AddText";
+// import Filter from "./Filter";
 
 const Canvas = () => {
 
@@ -27,15 +29,21 @@ const Canvas = () => {
         }
     }
 
-    const handleMouseUp = () => {
+    const handleMouseUp = (e) => {
         setDraggable(false);
+        e.preventDefault();
     }
 
   return (
     <div className="canvas" onMouseMove={handleMouseMove} onMouseUp ={handleMouseUp}>
       <h1>Vision Board</h1>
+
+      {/* canvas background */}
       <div className="img">
         <img src={bg} alt="bg" />
+
+         {/* text */}
+      <AddText />
       </div>
 
       {/* canvas image */}
@@ -51,6 +59,7 @@ const Canvas = () => {
        >
         <img src={dragImg} alt="bg" draggable={false}/>
       </div>
+
     </div>
   );
 };

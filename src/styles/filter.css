@@ -1,0 +1,29 @@
+.filterMenu{
+    position: absolute;
+    background-color: rgb(254, 202, 211);
+    width: 100px;
+    height: 200px;
+    padding: 20px;
+    top: 0;
+    left:0;
+    margin: 30px 30px;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.wrapper input{
+    border: none;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    background-color: red;
+    padding: 11px;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+}
+
